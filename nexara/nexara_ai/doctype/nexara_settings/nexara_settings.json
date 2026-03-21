@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-21 19:51:13.152983",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ai_settings_tab",
+  "ai_settings_section",
+  "model",
+  "api_configuration_tab",
+  "chat_settings_tab",
+  "ai_behavior_tab",
+  "defaults_tab",
+  "safety_tab",
+  "debug_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "ai_settings_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "api_configuration_tab",
+   "fieldtype": "Tab Break",
+   "label": "API Configuration"
+  },
+  {
+   "fieldname": "chat_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chat Settings"
+  },
+  {
+   "fieldname": "ai_behavior_tab",
+   "fieldtype": "Tab Break",
+   "label": "AI Behavior"
+  },
+  {
+   "fieldname": "defaults_tab",
+   "fieldtype": "Tab Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "safety_tab",
+   "fieldtype": "Tab Break",
+   "label": "Safety"
+  },
+  {
+   "fieldname": "debug_tab",
+   "fieldtype": "Tab Break",
+   "label": "Debug"
+  },
+  {
+   "fieldname": "ai_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "AI Settings"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-21 19:59:25.365120",
+ "modified_by": "Administrator",
+ "module": "Nexara AI",
+ "name": "Nexara Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

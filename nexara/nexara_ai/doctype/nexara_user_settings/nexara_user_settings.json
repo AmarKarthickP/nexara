@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-21 19:59:46.639175",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "appearance_section",
+  "theme",
+  "sidebar",
+  "column_break_uuvl",
+  "enable_sound",
+  "enable_animations",
+  "chat_behavior_section",
+  "response_style"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "appearance_section",
+   "fieldtype": "Section Break",
+   "label": "Appearance"
+  },
+  {
+   "default": "Light",
+   "fieldname": "theme",
+   "fieldtype": "Select",
+   "label": "Theme",
+   "options": "Light\nDark"
+  },
+  {
+   "default": "Close",
+   "fieldname": "sidebar",
+   "fieldtype": "Select",
+   "label": "Sidebar",
+   "options": "Always Open\nCompact Mode\nOpen\nClose"
+  },
+  {
+   "fieldname": "column_break_uuvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_sound",
+   "fieldtype": "Check",
+   "label": "Enable Sound"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_animations",
+   "fieldtype": "Check",
+   "label": "Enable Animations"
+  },
+  {
+   "fieldname": "chat_behavior_section",
+   "fieldtype": "Section Break",
+   "label": "Chat Behavior"
+  },
+  {
+   "fieldname": "response_style",
+   "fieldtype": "Select",
+   "label": "Response Style",
+   "options": "Short\nDetailed\nTechnical"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-21 20:12:40.734325",
+ "modified_by": "Administrator",
+ "module": "Nexara AI",
+ "name": "Nexara User Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "user"
+}

@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-21 19:48:28.581144",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "page",
+  "column_break_zxhh",
+  "reference_type",
+  "reference_name",
+  "section_break_pbll",
+  "data"
+ ],
+ "fields": [
+  {
+   "fieldname": "page",
+   "fieldtype": "Link",
+   "label": "Page",
+   "options": "Nexara Page"
+  },
+  {
+   "fieldname": "column_break_zxhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Name",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "Reference Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "section_break_pbll",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "JSON",
+   "label": "Data"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-21 19:50:19.405636",
+ "modified_by": "Administrator",
+ "module": "Nexara AI",
+ "name": "Nexara Page Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
