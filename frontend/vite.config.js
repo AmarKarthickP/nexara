@@ -6,9 +6,18 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/assets/nexara/frontend/",
+  base: process.env.NODE_ENV === "development"
+  ? "/"
+  : "/assets/nexara/frontend/",
   server: {
     port: 8000, // Change this to your desired port
+    proxy: {
+    "/api": {
+      target: "http://localhost:8002",
+      changeOrigin: true,
+      secure: false
+    }
+  }
   },
   plugins: [
     vue(),
