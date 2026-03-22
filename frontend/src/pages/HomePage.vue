@@ -37,13 +37,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import ChatBox from '@/components/ChatBox.vue';
+import { getUserInfo, getUserSettings } from '@/services/user';
 
-const first_name = ref("");
 const now = ref(new Date());
+const first_name = ref("");
+let sidebar = ref("");
 
 const greeting = computed(() => {
   const hours = now.value.getHours();
-
   if (hours < 12) return 'Good morning';
   if (hours < 17) return 'Good afternoon';
   return 'Good evening';
@@ -51,15 +52,19 @@ const greeting = computed(() => {
 
 onMounted(async () => {
   try {
-    const res = await fetch("/api/method/nexara.api.user_settings.get_user_info", {
-                    credentials: "include"
-                });
-    const data = await res.json();
-    console.log(data);
-    first_name.value = data.message.first_name || "User";
+    const user_info = await getUserInfo();
+    first_name.value = user_info.first_name || "User";
   } catch (e) {
-    console.error("Failed to fetch user:", e);
     first_name.value = "User";
+  }
+
+  try {
+    const user_settings = await getUserSettings();
+    console.log(user_settings);
+    first_name.value = user_settings.first_name || "User";
+    sidebar.value = user_settings.first_name;
+  } catch (e) {
+    // first_name.value = "User";
   }
 });
 </script>

@@ -15,14 +15,18 @@ def save_user_settings(field, value):
     doc.set(field, value)
     doc.save()
     
+@frappe.whitelist()
 def get_or_create_user_settings():
     user = frappe.session.user
 
     if not frappe.db.exists("Nexara User Settings", {"user": user}):
-        return frappe.get_doc({
+        doc = frappe.get_doc({
             "doctype": "Nexara User Settings",
             "user": user,
-            "theme": "Light"
-        }).insert()
+        })
+        doc.insert()
+        frappe.db.commit()
+        
+        return doc
 
     return frappe.get_doc("Nexara User Settings", {"user": user})

@@ -1,0 +1,27 @@
+{
+ "app": "nexara",
+ "creation": "2026-03-14 17:43:04.676027",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "brain-circuit",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Nexara AI",
+   "link_to": "Nexara AI",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-22 14:56:25.201140",
+ "modified_by": "karthickpamar@gmail.com",
+ "name": "Nexara AI",
+ "owner": "amar.p@groupteampro.com",
+ "standard": 1,
+ "title": "Nexara AI"
+}
