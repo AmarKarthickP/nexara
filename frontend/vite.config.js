@@ -12,12 +12,12 @@ export default defineConfig({
   server: {
     port: 8000, // Change this to your desired port
     proxy: {
-    "/api": {
-      target: "http://localhost:8002",
-      changeOrigin: true,
-      secure: false
+      "/api": {
+        target: "http://localhost:8002",
+        changeOrigin: true,
+        secure: false
+      }
     }
-  }
   },
   plugins: [
     vue(),

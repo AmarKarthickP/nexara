@@ -1,6 +1,6 @@
 <template>
     <div class="relative bg-white mt-10 rounded-xl min-h-20">
-        <svg class="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
+        <svg class="absolute inset-0 md:w-full h-full pointer-events-none overflow-visible">
             <defs>
                 <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#22d3ee" />
